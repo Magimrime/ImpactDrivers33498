@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design | Team 33498</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container nav-container">
+            <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">IMPACT<span
+                        style="color:white">DRIVERS</span></a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="design.html" class="active">Design</a></li>
+                <li><a href="stats.html">Season Stats</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <header style="padding-top: 150px; text-align: center; padding-bottom: 50px;">
+        <div class="container fade-in">
+            <h1>Engineering Portfolio</h1>
+            <p style="color: rgba(245,245,220,0.8);">Insights from our 2025 Engineering Notebook</p>
+        </div>
+    </header>
+
+    <section class="container fade-in">
+        <h2 style="text-align: center; margin-bottom: 3rem;">Autonomous Mode Evolution</h2>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 3rem;">
+
+            <!-- V1 Card -->
+            <div class="glass-card">
+                <div
+                    style="background: rgba(143,188,143,0.1); height: 200px; border-radius: 8px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; border: 1px dashed rgba(255,255,255,0.2);">
+                    <span style="font-size: 3rem;">🎯</span>
+                </div>
+                <h3>V1: Simple Shooter</h3>
+                <p>
+                    <strong>Strategy:</strong> Shoot 3 balls into the goal from a static position.
+                </p>
+                <div
+                    style="margin-top: 1rem; padding: 1rem; background: rgba(255,0,0,0.1); border-radius: 8px; border-left: 3px solid #ff6b6b;">
+                    <p style="font-size: 0.9rem; color: #ffcccc;">
+                        <strong>Challenge:</strong> Inconsistent accuracy. Slight misplacement of the robot would cause
+                        it to miss all shots, leading to wasted autonomous periods.
+                    </p>
+                </div>
+            </div>
+
+            <!-- V2 Arrow -->
+            <div
+                style="display: flex; align-items: center; justify-content: center; font-size: 2rem; color: var(--accent-color);">
+                &rarr;
+                <span style="font-size: 0.8rem; margin-left: 10px; opacity: 0.7;">Iterated to</span>
+            </div>
+
+            <!-- V2 Card -->
+            <div class="glass-card"
+                style="border-color: var(--accent-color); box-shadow: 0 0 20px rgba(143,188,143,0.2);">
+                <div
+                    style="background: rgba(143,188,143,0.1); height: 200px; border-radius: 8px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; border: 1px dashed rgba(255,255,255,0.2);">
+                    <span style="font-size: 3rem;">🔄 🛡️</span>
+                </div>
+                <h3>V2: Dynamic Movement</h3>
+                <p>
+                    <strong>Strategy:</strong> Prioritize movement and safety. The robot strafes or turns to leave the
+                    shooting zone.
+                </p>
+                <div
+                    style="margin-top: 1rem; padding: 1rem; background: rgba(143,188,143,0.1); border-radius: 8px; border-left: 3px solid var(--accent-color);">
+                    <p style="font-size: 0.9rem; color: #e8f3e8;">
+                        <strong>Improvement:</strong> By moving to a parking zone or a better vantage point, we secured
+                        reliable points. We refined this further to "Turn & Move" instead of just strafing, which proved
+                        to be a safer maneuver for our specific chassis.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Team 33498 "Impact Drivers".</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,1 +1,84 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact Drivers | Team 33498</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">IMPACT<span style="color:white">DRIVERS</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="design.html">Design</a></li>
+                <li><a href="stats.html">Season Stats</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" style="height: 100vh; display: flex; align-items: center; position: relative; overflow: hidden;">
+        <!-- decorative background elements -->
+        <div
+            style="position: absolute; top: -10%; right: -10%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(143,188,143,0.2) 0%, rgba(0,0,0,0) 70%); border-radius: 50%;">
+        </div>
+        <div
+            style="position: absolute; bottom: -10%; left: -10%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(210,180,140,0.1) 0%, rgba(0,0,0,0) 70%); border-radius: 50%;">
+        </div>
+
+        <div class="container" style="position: relative; z-index: 2; text-align: center;">
+            <h1 style="font-size: 4rem; margin-bottom: 0.5rem; text-shadow: 0 4px 10px rgba(0,0,0,0.5);">IMPACT DRIVERS
+            </h1>
+            <h2 style="font-size: 2rem; color: var(--primary-text); font-weight: 300;">Team #33498</h2>
+            <p style="font-size: 1.2rem; margin: 1.5rem 0; color: rgba(245,245,220, 0.8);">Fremont, California</p>
+            <div style="margin-top: 2rem;">
+                <a href="design.html" class="btn">Our Robot</a>
+                <a href="stats.html" class="btn btn-secondary" style="margin-left: 1rem;">Season Stats</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="container fade-in">
+        <div class="glass-card">
+            <h2 style="text-align: center;">Who We Are</h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto; color: rgba(245,245,220,0.9);">
+                We are Team 33498, the Impact Drivers. Based in Fremont, CA, we are a passionate group of students
+                dedicated to innovation, engineering excellence, and spreading the FIRST® mission.
+                Our 2025 season "Into The Deep" challenges us to think deeper and reach higher.
+            </p>
+        </div>
+    </section>
+
+    <section class="container fade-in"
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+        <div class="glass-card" style="text-align: center;">
+            <h3>Engineering</h3>
+            <p>Exploring advanced autonomous navigation and robust mechanical design.</p>
+            <a href="design.html" style="display: inline-block; margin-top: 1rem; font-weight: bold;">See our Portfolio
+                &rarr;</a>
+        </div>
+        <div class="glass-card" style="text-align: center;">
+            <h3>Competition</h3>
+            <p>Tracking our progress through qualifiers in Saratoga and Folsom.</p>
+            <a href="stats.html" style="display: inline-block; margin-top: 1rem; font-weight: bold;">View Results
+                &rarr;</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Team 33498 "Impact Drivers". All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
