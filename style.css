@@ -259,6 +259,42 @@ nav {
     color: var(--primary-text);
 }
 
+/* Team Page Styles */
+.team-hero {
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.team-hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    max-height: 600px;
+}
+
+.member-card {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.member-avatar {
+    width: 100px;
+    height: 100px;
+    background: rgba(143, 188, 143, 0.2);
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    border: 2px solid var(--accent-color);
+}
+
 /* Buttons */
 .btn {
     display: inline-block;
