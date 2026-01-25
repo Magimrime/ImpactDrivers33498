@@ -311,7 +311,7 @@ nav {
 
 .btn:hover {
     background: var(--highlight-color);
-    transform: scale(1.05);
+    /* transform: scale(1.05); Removed to stop movement */
 }
 
 .btn-secondary {
