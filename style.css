@@ -1,10 +1,14 @@
 :root {
-    --bg-color: #1a261a; /* Dark Forest Green */
+    --bg-color: #1a261a;
+    /* Dark Forest Green */
     --card-bg: rgba(255, 255, 255, 0.05);
     --glass-border: rgba(255, 255, 255, 0.1);
-    --primary-text: #f5f5dc; /* Warm Beige */
-    --accent-color: #8fbc8f; /* Sage Green */
-    --highlight-color: #d2b48c; /* Tan/Earth */
+    --primary-text: #f5f5dc;
+    /* Warm Beige */
+    --accent-color: #8fbc8f;
+    /* Sage Green */
+    --highlight-color: #d2b48c;
+    /* Tan/Earth */
     --nav-bg: rgba(26, 38, 26, 0.8);
     --font-main: 'Nunito', sans-serif;
 }
@@ -13,6 +17,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+    /* Offset for fixed header */
 }
 
 body {
@@ -24,7 +34,9 @@ body {
 }
 
 /* Typography */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-weight: 700;
     margin-bottom: 1rem;
     color: var(--accent-color);
@@ -47,6 +59,22 @@ a:hover {
     padding: 0 2rem;
 }
 
+/* Design Page Layout Grid */
+.design-layout {
+    display: flex;
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+}
+
+.content-column {
+    flex: 1;
+    min-width: 0;
+    /* Prevents flex item from overflowing */
+}
+
 section {
     padding: 4rem 0;
 }
@@ -67,6 +95,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
 .logo {
@@ -93,6 +124,53 @@ nav {
     border-bottom: 2px solid var(--accent-color);
 }
 
+/* Sidebar Navigation */
+.sidebar-nav {
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+    width: 200px;
+    flex-shrink: 0;
+    /* Prevent shrinking */
+    display: none;
+    /* Hidden on mobile by default */
+}
+
+@media (min-width: 1024px) {
+    .sidebar-nav {
+        display: block;
+    }
+}
+
+.sidebar-list {
+    list-style: none;
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 1rem;
+}
+
+.sidebar-list li {
+    margin-bottom: 0.5rem;
+}
+
+.sidebar-list a {
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    color: rgba(245, 245, 220, 0.7);
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.sidebar-list a:hover,
+.sidebar-list a.active-section {
+    background: rgba(143, 188, 143, 0.2);
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
 /* Component: Glass Card */
 .glass-card {
     background: var(--card-bg);
@@ -103,6 +181,7 @@ nav {
     padding: 2rem;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
 }
 
 .glass-card:hover {
@@ -209,6 +288,7 @@ footer {
         opacity: 0;
         transform: translateX(50px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0px);

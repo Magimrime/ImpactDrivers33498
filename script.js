@@ -40,4 +40,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const hiddenElements = document.querySelectorAll('.fade-in');
     hiddenElements.forEach((el) => observer.observe(el));
+
+    // Scroll Spy for Sidebar
+    const sections = document.querySelectorAll('section[id]');
+    const sidebarLinks = document.querySelectorAll('.sidebar-list a');
+
+    if (sections.length > 0 && sidebarLinks.length > 0) {
+        const spyOptions = {
+            threshold: 0.3, // Trigger when 30% of section is visible
+            rootMargin: "-100px 0px -50% 0px" // Adjusted offset for fixed header
+        };
+
+        const spyObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    sidebarLinks.forEach(link => {
+                        link.classList.remove('active-section');
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add('active-section');
+                        }
+                    });
+                }
+            });
+        }, spyOptions);
+
+        sections.forEach(section => spyObserver.observe(section));
+    }
 });

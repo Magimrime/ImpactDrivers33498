@@ -11,7 +11,7 @@
 
 <body>
     <nav>
-        <div class="container nav-container">
+        <div class="nav-container">
             <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">IMPACT<span
                         style="color:white">DRIVERS</span></a></div>
             <ul class="nav-links">
@@ -34,61 +34,131 @@
         </div>
     </header>
 
-    <section class="container fade-in">
-        <h2 style="text-align: center; margin-bottom: 3rem;">Autonomous Mode Evolution</h2>
+    <div class="design-layout">
+        <!-- Main Content -->
+        <main class="content-column">
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 3rem;">
-
-            <!-- V1 Card -->
-            <div class="glass-card">
-                <div
-                    style="background: rgba(143,188,143,0.1); height: 200px; border-radius: 8px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; border: 1px dashed rgba(255,255,255,0.2);">
-                    <span style="font-size: 3rem;">🎯</span>
+            <section id="goals" class="fade-in">
+                <div class="glass-card">
+                    <h2>Goals & Reflections</h2>
+                    <p>
+                        As a rookie team, we entered the season with a steep learning curve. Our initial robot was
+                        basic, lacking advanced intake systems, but it provided a solid foundation.
+                        We recognized significant room for improvement, particularly in our autonomous consistency.
+                    </p>
+                    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1);">
+                        <strong>Fundraising:</strong> We are currently seeking sponsors to support our journey!
+                    </div>
                 </div>
-                <h3>V1: Simple Shooter</h3>
-                <p>
-                    <strong>Strategy:</strong> Shoot 3 balls into the goal from a static position.
-                </p>
-                <div
-                    style="margin-top: 1rem; padding: 1rem; background: rgba(255,0,0,0.1); border-radius: 8px; border-left: 3px solid #ff6b6b;">
-                    <p style="font-size: 0.9rem; color: #ffcccc;">
-                        <strong>Challenge:</strong> Inconsistent accuracy. Slight misplacement of the robot would cause
-                        it to miss all shots, leading to wasted autonomous periods.
+            </section>
+
+            <section id="challenges" class="fade-in">
+                <h2>Challenges & Accomplishments</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+
+                    <div class="glass-card">
+                        <h3>Overcoming Hurdles</h3>
+                        <ul style="padding-left: 1.2rem; color: rgba(245,245,220,0.8);">
+                            <li><strong>Rookie Learning Curve:</strong> We learned everything from scratch in just one
+                                month, often requiring overtime meetings.</li>
+                            <li><strong>Stick Drift:</strong> Solved by implementing a software "deadband" to ignore
+                                minor analog inputs.</li>
+                            <li><strong>Strafing Speed:</strong> Our initial mecanum strafing was sluggish. We fixed
+                                this by adding a custom power multiplier in the code.</li>
+                        </ul>
+                    </div>
+
+                    <div class="glass-card">
+                        <h3>Key Wins</h3>
+                        <ul style="padding-left: 1.2rem; color: rgba(245,245,220,0.8);">
+                            <li><strong>Working Robot:</strong> Successfully fielded a functional robot despite time
+                                constraints.</li>
+                            <li><strong>Mecanum Success:</strong> Successfully integrated complex omnidirectional
+                                movement.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="hardware" class="fade-in">
+                <h2>Bot Overview</h2>
+                <div class="glass-card">
+                    <div style="display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 2rem;">
+                        <div style="flex: 1;">
+                            <h3>Key Features</h3>
+                            <ul style="list-style: none;">
+                                <li style="margin-bottom: 0.5rem;">🔹 <strong>Shooting Plate:</strong> Custom addition
+                                    to the launcher to direct balls consistently.</li>
+                                <li style="margin-bottom: 0.5rem;">🔹 <strong>Metal Front Plate:</strong> Enhanced
+                                    structural durability for collisions.</li>
+                                <li style="margin-bottom: 0.5rem;">🔹 <strong>Mecanum Wheels:</strong> Multi-directional
+                                    movement capabilities.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h3>Drive Train Evolution</h3>
+                    <div style="background: rgba(0,0,0,0.2); padding: 1.5rem; border-radius: 12px; margin-top: 1rem;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                            <span style="font-weight: bold; color: #ff6b6b;">V1: Front-Wheel Drive</span>
+                            <span>&rarr;</span>
+                            <span style="font-weight: bold; color: var(--accent-color);">V2: AWD Mecanum</span>
+                        </div>
+                        <p style="font-size: 0.9rem;">
+                            Our V1 chassis used plastic chains that frequently slipped and broke. V2 upgraded to a
+                            direct-driven All-Wheel Drive system with 4x 312 KV motors (3744 RPM), solving traction
+                            issues.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="launcher" class="fade-in">
+                <h2>Launcher System</h2>
+                <div class="glass-card">
+                    <p>
+                        We utilized the GoBilda starter kit as a base but engineered a custom <strong>Back
+                            Plate</strong> behind the ramp. This modification significantly improved shot consistency by
+                        stabilizing the game element before launch.
                     </p>
                 </div>
-            </div>
+            </section>
 
-            <!-- V2 Arrow -->
-            <div
-                style="display: flex; align-items: center; justify-content: center; font-size: 2rem; color: var(--accent-color);">
-                &rarr;
-                <span style="font-size: 0.8rem; margin-left: 10px; opacity: 0.7;">Iterated to</span>
-            </div>
-
-            <!-- V2 Card -->
-            <div class="glass-card"
-                style="border-color: var(--accent-color); box-shadow: 0 0 20px rgba(143,188,143,0.2);">
-                <div
-                    style="background: rgba(143,188,143,0.1); height: 200px; border-radius: 8px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; border: 1px dashed rgba(255,255,255,0.2);">
-                    <span style="font-size: 3rem;">🔄 🛡️</span>
+            <section id="autonomous" class="fade-in">
+                <h2>Autonomous Evolution</h2>
+                <div class="glass-card">
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="color: #ffcccc;">V1: Simple Shooter</h3>
+                        <p>Static shooting of 3 balls. Inconsistent due to alignment sensitivity.</p>
+                    </div>
+                    <div style="margin-bottom: 2rem; padding-left: 1rem; border-left: 2px solid var(--accent-color);">
+                        <h3>V2: Dynamic Movement</h3>
+                        <p>Implemented "Turn & Move" strategy instead of risky strafing. The robot now reliably exits
+                            the zone for parking points.</p>
+                    </div>
+                    <div>
+                        <h3>Software Note</h3>
+                        <p style="font-size: 0.9rem; opacity: 0.8;">
+                            We use standard mecanum kinematics for movement: <br>
+                            <code>FrontLeft = forward + strafe + rotate</code>
+                        </p>
+                    </div>
                 </div>
-                <h3>V2: Dynamic Movement</h3>
-                <p>
-                    <strong>Strategy:</strong> Prioritize movement and safety. The robot strafes or turns to leave the
-                    shooting zone.
-                </p>
-                <div
-                    style="margin-top: 1rem; padding: 1rem; background: rgba(143,188,143,0.1); border-radius: 8px; border-left: 3px solid var(--accent-color);">
-                    <p style="font-size: 0.9rem; color: #e8f3e8;">
-                        <strong>Improvement:</strong> By moving to a parking zone or a better vantage point, we secured
-                        reliable points. We refined this further to "Turn & Move" instead of just strafing, which proved
-                        to be a safer maneuver for our specific chassis.
-                    </p>
-                </div>
-            </div>
+            </section>
 
-        </div>
-    </section>
+        </main>
+
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar-nav">
+            <ul class="sidebar-list">
+                <li><a href="#goals">Goals & Reflections</a></li>
+                <li><a href="#challenges">Challenges</a></li>
+                <li><a href="#hardware">Hardware Spec</a></li>
+                <li><a href="#launcher">Launcher</a></li>
+                <li><a href="#autonomous">Autonomous</a></li>
+            </ul>
+        </aside>
+    </div>
 
     <footer>
         <p>&copy; 2026 Team 33498 "Impact Drivers".</p>
