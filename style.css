@@ -273,8 +273,9 @@ nav {
     width: 100%;
     height: auto;
     display: block;
-    object-fit: cover;
-    max-height: 600px;
+    /* Removed max-height and object-fit: cover to prevent cropping */
+    border-radius: 16px;
+    /* Matched to container */
 }
 
 .member-card {
