@@ -67,4 +67,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
         sections.forEach(section => spyObserver.observe(section));
     }
+
+    // Stats Expansion Logic
+    const expandButtons = document.querySelectorAll('.stats-expand-btn');
+    expandButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent default anchor interactions if any
+            const targetId = btn.getAttribute('data-target');
+            const detailsSection = document.getElementById(targetId);
+
+            if (detailsSection) {
+                detailsSection.classList.toggle('open');
+                // Optional: Change button text
+                if (detailsSection.classList.contains('open')) {
+                    btn.textContent = "Hide Details";
+                } else {
+                    btn.textContent = "View Details";
+                }
+            }
+        });
+    });
 });

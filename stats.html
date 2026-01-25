@@ -11,7 +11,7 @@
 
 <body>
     <nav>
-        <div class="container nav-container">
+        <div class="nav-container">
             <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">IMPACT<span
                         style="color:white">DRIVERS</span></a></div>
             <ul class="nav-links">
@@ -29,7 +29,7 @@
 
     <header style="padding-top: 150px; text-align: center; padding-bottom: 50px;">
         <div class="container fade-in">
-            <h1>Season 2025: Into The Deep</h1>
+            <h1>Season 2026: Decode</h1>
             <p style="color: rgba(245,245,220,0.8);">Tracking our progress through the NorCal Qualifiers</p>
         </div>
     </header>
@@ -38,7 +38,7 @@
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
 
             <!-- Saratoga QT -->
-            <div class="glass-card">
+            <div class="glass-card stats-card">
                 <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
                     <div>
                         <h2 style="font-size: 1.5rem; margin-bottom: 0;">Saratoga QT</h2>
@@ -56,14 +56,49 @@
                 </div>
 
                 <div
-                    style="background: rgba(0,0,0,0.2); height: 10px; width: 100%; border-radius: 5px; overflow: hidden;">
+                    style="background: rgba(0,0,0,0.2); height: 10px; width: 100%; border-radius: 5px; overflow: hidden; margin-bottom: 1rem;">
                     <div style="width: 80%; background: var(--accent-color); height: 100%;"></div>
                 </div>
-                <p style="margin-top: 5px; font-size: 0.8rem; text-align: right; opacity: 0.7;">80% Win Rate</p>
+                <p style="font-size: 0.8rem; text-align: right; opacity: 0.7;">80% Win Rate</p>
+
+                <button class="stats-expand-btn" data-target="saratoga-details">View Details</button>
+
+                <div id="saratoga-details" class="stats-details">
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-label">Ranking Score (RS)</span>
+                            <span class="stat-value">2.40</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Sort Order 1</span>
+                            <span class="stat-value">--</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Match Pts (TBP1)</span>
+                            <span class="stat-value">80.60</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Base Pts (TBP2)</span>
+                            <span class="stat-value">11.00</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Auto Pts (TBP3)</span>
+                            <span class="stat-value">8.80</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">High Score</span>
+                            <span class="stat-value">96</span>
+                        </div>
+                        <div class="stat-item" style="grid-column: span 2;">
+                            <span class="stat-label">Games Played</span>
+                            <span class="stat-value">5</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Folsom QT -->
-            <div class="glass-card">
+            <div class="glass-card stats-card">
                 <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
                     <div>
                         <h2 style="font-size: 1.5rem; margin-bottom: 0;">Folsom QT #1</h2>
@@ -81,10 +116,45 @@
                 </div>
 
                 <div
-                    style="background: rgba(0,0,0,0.2); height: 10px; width: 100%; border-radius: 5px; overflow: hidden;">
+                    style="background: rgba(0,0,0,0.2); height: 10px; width: 100%; border-radius: 5px; overflow: hidden; margin-bottom: 1rem;">
                     <div style="width: 40%; background: #d2b48c; height: 100%;"></div>
                 </div>
-                <p style="margin-top: 5px; font-size: 0.8rem; text-align: right; opacity: 0.7;">40% Win Rate</p>
+                <p style="font-size: 0.8rem; text-align: right; opacity: 0.7;">40% Win Rate</p>
+
+                <button class="stats-expand-btn" data-target="folsom-details">View Details</button>
+
+                <div id="folsom-details" class="stats-details">
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-label">Ranking Score (RS)</span>
+                            <span class="stat-value">1.60</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Sort Order 1</span>
+                            <span class="stat-value">--</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Match Pts (TBP1)</span>
+                            <span class="stat-value">102.20</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Base Pts (TBP2)</span>
+                            <span class="stat-value">8.00</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Auto Pts (TBP3)</span>
+                            <span class="stat-value">29.80</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">High Score</span>
+                            <span class="stat-value">184</span>
+                        </div>
+                        <div class="stat-item" style="grid-column: span 2;">
+                            <span class="stat-label">Games Played</span>
+                            <span class="stat-value">5</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
