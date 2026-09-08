@@ -28,137 +28,227 @@
         </div>
     </nav>
 
-    <header style="padding-top: 150px; text-align: center; padding-bottom: 50px;">
+    <header style="padding-top: 150px; text-align: center; padding-bottom: 30px;">
         <div class="container fade-in">
-            <h1>Season 2026: Decode</h1>
-            <p style="color: rgba(245,245,220,0.8);">Tracking our progress through the NorCal Qualifiers</p>
+            <h1 id="season-title">Season 2026-27: BIOBUZZ</h1>
+            <p id="season-subtitle" style="color: rgba(245,245,220,0.8);">Our newest season kicks off September 12, 2026</p>
         </div>
     </header>
 
-    <section class="container fade-in">
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
-
-            <!-- Saratoga QT -->
-            <div class="glass-card stats-card">
-                <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
-                    <div>
-                        <h2 style="font-size: 1.5rem; margin-bottom: 0;">Saratoga QT</h2>
-                        <span style="font-size: 0.9rem; opacity: 0.7;">Jan 11, 2026</span>
-                    </div>
-                    <div
-                        style="background: var(--accent-color); color: var(--bg-color); padding: 5px 10px; border-radius: 4px; font-weight: bold;">
-                        Rank 12
-                    </div>
-                </div>
-
-                <div style="margin: 2rem 0; text-align: center;">
-                    <div style="font-size: 3rem; font-weight: 800; color: white;">4 - 1 - 0</div>
-                    <p style="opacity: 0.8;">Win - Loss - Tie</p>
-                </div>
-
-                <div
-                    style="background: rgba(0,0,0,0.2); height: 10px; width: 100%; border-radius: 5px; overflow: hidden; margin-bottom: 1rem;">
-                    <div style="width: 80%; background: var(--accent-color); height: 100%;"></div>
-                </div>
-                <p style="font-size: 0.8rem; text-align: right; opacity: 0.7;">80% Win Rate</p>
-
-                <button class="stats-expand-btn" data-target="saratoga-details">View Details</button>
-
-                <div id="saratoga-details" class="stats-details">
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <span class="stat-label">Ranking Score (RS)</span>
-                            <span class="stat-value">2.40</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-label">Sort Order 1</span>
-                            <span class="stat-value">--</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-label">Match Pts (TBP1)</span>
-                            <span class="stat-value">80.60</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-label">Base Pts (TBP2)</span>
-                            <span class="stat-value">11.00</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-label">Auto Pts (TBP3)</span>
-                            <span class="stat-value">8.80</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-label">High Score</span>
-                            <span class="stat-value">96</span>
-                        </div>
-                        <div class="stat-item" style="grid-column: span 2;">
-                            <span class="stat-label">Games Played</span>
-                            <span class="stat-value">5</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Folsom QT -->
-            <div class="glass-card stats-card">
-                <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
-                    <div>
-                        <h2 style="font-size: 1.5rem; margin-bottom: 0;">Folsom QT #1</h2>
-                        <span style="font-size: 0.9rem; opacity: 0.7;">Jan 24, 2026</span>
-                    </div>
-                    <div
-                        style="background: rgba(255,255,255,0.1); color: var(--primary-text); padding: 5px 10px; border-radius: 4px; font-weight: bold; border: 1px solid var(--glass-border);">
-                        Rank 23
-                    </div>
-                </div>
-
-                <div style="margin: 2rem 0; text-align: center;">
-                    <div style="font-size: 3rem; font-weight: 800; color: white;">2 - 3 - 0</div>
-                    <p style="opacity: 0.8;">Win - Loss - Tie</p>
-                </div>
-
-                <div
-                    style="background: rgba(0,0,0,0.2); height: 10px; width: 100%; border-radius: 5px; overflow: hidden; margin-bottom: 1rem;">
-                    <div style="width: 40%; background: #d2b48c; height: 100%;"></div>
-                </div>
-                <p style="font-size: 0.8rem; text-align: right; opacity: 0.7;">40% Win Rate</p>
-
-                <button class="stats-expand-btn" data-target="folsom-details">View Details</button>
-
-                <div id="folsom-details" class="stats-details">
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <span class="stat-label">Ranking Score (RS)</span>
-                            <span class="stat-value">1.60</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-label">Sort Order 1</span>
-                            <span class="stat-value">--</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-label">Match Pts (TBP1)</span>
-                            <span class="stat-value">102.20</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-label">Base Pts (TBP2)</span>
-                            <span class="stat-value">8.00</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-label">Auto Pts (TBP3)</span>
-                            <span class="stat-value">29.80</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-label">High Score</span>
-                            <span class="stat-value">184</span>
-                        </div>
-                        <div class="stat-item" style="grid-column: span 2;">
-                            <span class="stat-label">Games Played</span>
-                            <span class="stat-value">5</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+    <!-- Season switcher: each button's data-season must match a .season-panel's data-season below -->
+    <div class="container">
+        <div class="season-tabs" role="tablist" aria-label="Select season">
+            <button class="season-tab" role="tab" data-season="2026-27">2026-27 &middot; BIOBUZZ</button>
+            <button class="season-tab" role="tab" data-season="2025-26">2025-26 &middot; Decode</button>
         </div>
+    </div>
+
+    <section class="container fade-in" style="padding-top: 2rem;">
+
+        <!-- ================= SEASON 2026-27: BIOBUZZ ================= -->
+        <div class="season-panel" role="tabpanel" data-season="2026-27" data-title="Season 2026-27: BIOBUZZ"
+            data-subtitle="Our newest season kicks off September 12, 2026">
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+
+                <!-- Season status card: replace with real event cards as qualifiers happen -->
+                <div class="glass-card stats-card">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                        <div>
+                            <h2 style="font-size: 1.5rem; margin-bottom: 0;">Season Kickoff</h2>
+                            <span style="font-size: 0.9rem; opacity: 0.7;">Sep 12, 2026</span>
+                        </div>
+                        <div
+                            style="background: rgba(255,255,255,0.1); color: var(--primary-text); padding: 5px 10px; border-radius: 4px; font-weight: bold; border: 1px solid var(--glass-border);">
+                            Upcoming
+                        </div>
+                    </div>
+
+                    <div style="margin: 2rem 0; text-align: center;">
+                        <div style="font-size: 3rem; font-weight: 800; color: white;">0 - 0 - 0</div>
+                        <p style="opacity: 0.8;">Win - Loss - Tie</p>
+                    </div>
+
+                    <div
+                        style="background: rgba(0,0,0,0.2); height: 10px; width: 100%; border-radius: 5px; overflow: hidden; margin-bottom: 1rem;">
+                        <div style="width: 0%; background: var(--accent-color); height: 100%;"></div>
+                    </div>
+                    <p style="font-size: 0.8rem; text-align: right; opacity: 0.7;">No matches played yet</p>
+
+                    <p style="margin-top: 1.5rem; color: rgba(245,245,220,0.85); font-size: 0.95rem;">
+                        The BIOBUZZ game reveal is on September 12. Qualifier results will appear here as the
+                        season progresses. Check back soon!
+                    </p>
+                </div>
+
+                <!--
+                TEMPLATE: copy this block for each new event. Make data-target and the details id unique.
+
+                <div class="glass-card stats-card">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                        <div>
+                            <h2 style="font-size: 1.5rem; margin-bottom: 0;">EVENT NAME</h2>
+                            <span style="font-size: 0.9rem; opacity: 0.7;">DATE</span>
+                        </div>
+                        <div style="background: var(--accent-color); color: var(--bg-color); padding: 5px 10px; border-radius: 4px; font-weight: bold;">
+                            Rank ??
+                        </div>
+                    </div>
+                    <div style="margin: 2rem 0; text-align: center;">
+                        <div style="font-size: 3rem; font-weight: 800; color: white;">W - L - T</div>
+                        <p style="opacity: 0.8;">Win - Loss - Tie</p>
+                    </div>
+                    <div style="background: rgba(0,0,0,0.2); height: 10px; width: 100%; border-radius: 5px; overflow: hidden; margin-bottom: 1rem;">
+                        <div style="width: 50%; background: var(--accent-color); height: 100%;"></div>
+                    </div>
+                    <p style="font-size: 0.8rem; text-align: right; opacity: 0.7;">50% Win Rate</p>
+                    <button class="stats-expand-btn" data-target="event-2027-details">View Details</button>
+                    <div id="event-2027-details" class="stats-details">
+                        <div class="stats-grid">
+                            <div class="stat-item"><span class="stat-label">Ranking Score (RS)</span><span class="stat-value">--</span></div>
+                            <div class="stat-item"><span class="stat-label">Sort Order 1</span><span class="stat-value">--</span></div>
+                            <div class="stat-item"><span class="stat-label">Match Pts (TBP1)</span><span class="stat-value">--</span></div>
+                            <div class="stat-item"><span class="stat-label">Base Pts (TBP2)</span><span class="stat-value">--</span></div>
+                            <div class="stat-item"><span class="stat-label">Auto Pts (TBP3)</span><span class="stat-value">--</span></div>
+                            <div class="stat-item"><span class="stat-label">High Score</span><span class="stat-value">--</span></div>
+                            <div class="stat-item" style="grid-column: span 2;"><span class="stat-label">Games Played</span><span class="stat-value">--</span></div>
+                        </div>
+                    </div>
+                </div>
+                -->
+
+            </div>
+        </div>
+
+        <!-- ================= SEASON 2025-26: DECODE ================= -->
+        <div class="season-panel" role="tabpanel" data-season="2025-26" data-title="Season 2025-26: Decode"
+            data-subtitle="Tracking our progress through the NorCal Qualifiers" hidden>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+
+                <!-- Saratoga QT -->
+                <div class="glass-card stats-card">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                        <div>
+                            <h2 style="font-size: 1.5rem; margin-bottom: 0;">Saratoga QT</h2>
+                            <span style="font-size: 0.9rem; opacity: 0.7;">Jan 11, 2026</span>
+                        </div>
+                        <div
+                            style="background: var(--accent-color); color: var(--bg-color); padding: 5px 10px; border-radius: 4px; font-weight: bold;">
+                            Rank 12
+                        </div>
+                    </div>
+
+                    <div style="margin: 2rem 0; text-align: center;">
+                        <div style="font-size: 3rem; font-weight: 800; color: white;">4 - 1 - 0</div>
+                        <p style="opacity: 0.8;">Win - Loss - Tie</p>
+                    </div>
+
+                    <div
+                        style="background: rgba(0,0,0,0.2); height: 10px; width: 100%; border-radius: 5px; overflow: hidden; margin-bottom: 1rem;">
+                        <div style="width: 80%; background: var(--accent-color); height: 100%;"></div>
+                    </div>
+                    <p style="font-size: 0.8rem; text-align: right; opacity: 0.7;">80% Win Rate</p>
+
+                    <button class="stats-expand-btn" data-target="saratoga-details">View Details</button>
+
+                    <div id="saratoga-details" class="stats-details">
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <span class="stat-label">Ranking Score (RS)</span>
+                                <span class="stat-value">2.40</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Sort Order 1</span>
+                                <span class="stat-value">--</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Match Pts (TBP1)</span>
+                                <span class="stat-value">80.60</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Base Pts (TBP2)</span>
+                                <span class="stat-value">11.00</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Auto Pts (TBP3)</span>
+                                <span class="stat-value">8.80</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">High Score</span>
+                                <span class="stat-value">96</span>
+                            </div>
+                            <div class="stat-item" style="grid-column: span 2;">
+                                <span class="stat-label">Games Played</span>
+                                <span class="stat-value">5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Folsom QT -->
+                <div class="glass-card stats-card">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                        <div>
+                            <h2 style="font-size: 1.5rem; margin-bottom: 0;">Folsom QT #1</h2>
+                            <span style="font-size: 0.9rem; opacity: 0.7;">Jan 24, 2026</span>
+                        </div>
+                        <div
+                            style="background: rgba(255,255,255,0.1); color: var(--primary-text); padding: 5px 10px; border-radius: 4px; font-weight: bold; border: 1px solid var(--glass-border);">
+                            Rank 23
+                        </div>
+                    </div>
+
+                    <div style="margin: 2rem 0; text-align: center;">
+                        <div style="font-size: 3rem; font-weight: 800; color: white;">2 - 3 - 0</div>
+                        <p style="opacity: 0.8;">Win - Loss - Tie</p>
+                    </div>
+
+                    <div
+                        style="background: rgba(0,0,0,0.2); height: 10px; width: 100%; border-radius: 5px; overflow: hidden; margin-bottom: 1rem;">
+                        <div style="width: 40%; background: #d2b48c; height: 100%;"></div>
+                    </div>
+                    <p style="font-size: 0.8rem; text-align: right; opacity: 0.7;">40% Win Rate</p>
+
+                    <button class="stats-expand-btn" data-target="folsom-details">View Details</button>
+
+                    <div id="folsom-details" class="stats-details">
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <span class="stat-label">Ranking Score (RS)</span>
+                                <span class="stat-value">1.60</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Sort Order 1</span>
+                                <span class="stat-value">--</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Match Pts (TBP1)</span>
+                                <span class="stat-value">102.20</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Base Pts (TBP2)</span>
+                                <span class="stat-value">8.00</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Auto Pts (TBP3)</span>
+                                <span class="stat-value">29.80</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">High Score</span>
+                                <span class="stat-value">184</span>
+                            </div>
+                            <div class="stat-item" style="grid-column: span 2;">
+                                <span class="stat-label">Games Played</span>
+                                <span class="stat-value">5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     </section>
 
     <footer>

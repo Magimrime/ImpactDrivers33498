@@ -88,3 +88,48 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// Season Switcher (stats page)
+document.addEventListener('DOMContentLoaded', () => {
+    const seasonTabs = document.querySelectorAll('.season-tab');
+    const seasonPanels = document.querySelectorAll('.season-panel');
+    if (seasonTabs.length === 0 || seasonPanels.length === 0) return;
+
+    const titleEl = document.getElementById('season-title');
+    const subtitleEl = document.getElementById('season-subtitle');
+
+    function showSeason(season, updateHash) {
+        let found = false;
+        seasonPanels.forEach(panel => {
+            const match = panel.dataset.season === season;
+            panel.hidden = !match;
+            if (match) {
+                found = true;
+                if (titleEl && panel.dataset.title) titleEl.textContent = panel.dataset.title;
+                if (subtitleEl && panel.dataset.subtitle) subtitleEl.textContent = panel.dataset.subtitle;
+            }
+        });
+        if (!found) return false;
+
+        seasonTabs.forEach(tab => {
+            const active = tab.dataset.season === season;
+            tab.classList.toggle('active', active);
+            tab.setAttribute('aria-selected', active ? 'true' : 'false');
+        });
+
+        if (updateHash && history.replaceState) {
+            history.replaceState(null, '', '#season-' + season);
+        }
+        return true;
+    }
+
+    seasonTabs.forEach(tab => {
+        tab.addEventListener('click', () => showSeason(tab.dataset.season, true));
+    });
+
+    // Deep link support: stats.html#season-2025-26 opens that season directly
+    const hashSeason = location.hash.startsWith('#season-') ? location.hash.slice(8) : null;
+    if (!hashSeason || !showSeason(hashSeason, false)) {
+        showSeason(seasonTabs[0].dataset.season, false);
+    }
+});
